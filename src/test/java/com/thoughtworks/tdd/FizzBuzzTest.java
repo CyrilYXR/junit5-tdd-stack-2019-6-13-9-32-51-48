@@ -104,14 +104,36 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_return_BuzzWhizz_when_number_is_21(){
+    public void should_return_FizzWhizz_when_number_is_21(){
         // GIVEN
         int number = 21;
         // WHEN
         FizzBuzz fizzBuzz = new FizzBuzz();
         String result = fizzBuzz.convert(number);
         // THEN
+        Assertions.assertEquals("FizzWhizz", result);
+    }
+
+    @Test
+    public void should_return_BuzzWhizz_when_number_is_35(){
+        // GIVEN
+        int number = 35;
+        // WHEN
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String result = fizzBuzz.convert(number);
+        // THEN
         Assertions.assertEquals("BuzzWhizz", result);
+    }
+
+    @Test
+    public void should_return_FizzBuzzWhizz_when_number_is_105(){
+        // GIVEN
+        int number = 105;
+        // WHEN
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String result = fizzBuzz.convert(number);
+        // THEN
+        Assertions.assertEquals("FizzBuzzWhizz", result);
     }
 
 
