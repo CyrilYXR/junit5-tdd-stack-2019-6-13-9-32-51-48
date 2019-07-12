@@ -59,5 +59,16 @@ public class FizzBuzzTest {
         Assertions.assertEquals("Buzz", result);
     }
 
+    @Test
+    public void should_return_Buzz_when_number_is_10(){
+        // GIVEN
+        int number = 10;
+        // WHEN
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String result = fizzBuzz.convert(number);
+        // THEN
+        Assertions.assertEquals("Buzz", result);
+    }
+
 
 }
